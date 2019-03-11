@@ -1,0 +1,31 @@
+{
+    "name": "ymm/validation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "曾俊杰",
+            "homepage": "https://www.ymstars.com",
+            "email": "ymstars@qq.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://www.ymstars.com",
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^5.6",
+        "illuminate/support": "~5.5",
+        "illuminate/validation": "~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ymstars\\Validation\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ymstars\\Validation\\ValidationServiceProvider"
+            ]
+        }
+    }
+}
