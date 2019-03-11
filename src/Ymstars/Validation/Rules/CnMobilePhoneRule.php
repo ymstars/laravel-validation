@@ -3,6 +3,7 @@
 namespace Ymstars\Validation\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
+use Ymstars\Validation\Validation;
 
 class CnMobilePhoneRule implements Rule
 {
@@ -25,7 +26,7 @@ class CnMobilePhoneRule implements Rule
      */
     public function passes($attribute, $value)
     {
-        return \YmsValidation::isCnMobilePhone($value);
+        return Validation::isCnMobilePhone($value);
     }
 
     /**
