@@ -14,7 +14,7 @@ class ValidationServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
+        //
     }
 
     /**
@@ -24,10 +24,6 @@ class ValidationServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->alias('Validation', 'Ymstars\Validation\Facade\YmstarsValidationFacade');
         //
-        $this->app->singleton('yms-validation', function ($app) {
-            return new Validation();
-        });
     }
 }

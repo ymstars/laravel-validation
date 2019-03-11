@@ -3,6 +3,7 @@
 namespace Ymstars\Validation\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
+use Ymstars\Validation\Validation;
 
 class CnTelRule implements Rule
 {
@@ -25,7 +26,7 @@ class CnTelRule implements Rule
      */
     public function passes($attribute, $value)
     {
-        return \YmsValidation::isCnTel($value);
+        return Validation::isCnTel($value);
     }
 
     /**

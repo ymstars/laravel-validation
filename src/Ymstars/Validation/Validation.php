@@ -25,29 +25,29 @@ class Validation
      * @param $value
      * @return bool
      */
-    public function match($regx, $value)
+    public static function match($regx, $value)
     {
         return preg_match($regx, $value);
     }
 
-    public function isEmail($value)
+    public static function isEmail($value)
     {
-        return $this->match(self::EMAIL, $value);
+        return self::match(self::EMAIL, $value);
     }
 
-    public function isCnTel($value)
+    public static function isCnTel($value)
     {
-        return $this->match(self::CN_TEL, $value);
+        return self::match(self::CN_TEL, $value);
     }
 
-    public function isCnMobilePhone($value)
+    public static function isCnMobilePhone($value)
     {
-        return $this->match(self::CN_MOBILE_PHONE, $value);
+        return self::match(self::CN_MOBILE_PHONE, $value);
     }
 
-    public function isCnIdCard($value)
+    public static function isCnIdCard($value)
     {
-        return $this->match(self::CN_ID_CARD, $value);
+        return self::match(self::CN_ID_CARD, $value);
     }
 
 }
